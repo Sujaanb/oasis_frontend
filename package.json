@@ -1,0 +1,27 @@
+{
+  "name": "oasis-react-sdk",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "rollup -c",
+    "start:example": "cd example && npm install && npm start",
+    "build:example": "cd example && npm run build"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "rollup": "^3.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "rollup-plugin-typescript2": "^0.34.0",
+    "typescript": "^5.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
